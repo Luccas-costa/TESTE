@@ -10,9 +10,283 @@
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </head>
 
-<body>
-    <i class="ph ph-instagram-logo teste-icon"></i>
-    <div class="text-red-600">teste</div>
+<body class="w-full h-full bg-zinc-900">
+    <div class="w-full h-full flex flex-col">
+        <div
+            class="z-10 size-[48px] rounded-xl bg-white/40 absolute top-2 right-2 flex items-center justify-center hover:bg-white/60 cursor-pointer">
+            <i class="ph-bold ph-gear gear-icon" size="40" style="color: rgba(255, 255, 255, 0.541)"></i>
+        </div>
+
+        <a href="#">
+            <div
+                class="z-10 w-auto px-2 h-[50px] border border-zinc-200 rounded-lg absolute top-2 left-2 flex items-center gap-2 cursor-pointer">
+                <i class="ph ph-instagram-logo instagram-icon"></i>
+                <div class="text-3xl text-white font-semibold">
+                    TORRES.MILLIE</div>
+            </div>
+        </a>
+
+        <div class="w-full h-[100vh] background-gradient-animated relative" id="inicio">
+            <!-- As setas serão adicionadas aqui -->
+        </div>
+
+        <div
+            class="w-full min-h-[40vh] h-auto pb-1 bg-zinc-200 rounded-t-[100px] translate-y-[-40vh] relative flex flex-col items-center justify-center">
+            <div
+                class="screen450:size-[400px] screen375:size-[340px] size-[320px] rounded-full bg-zinc-200 absolute top-1/2 left-1/2 -translate-x-1/2 translate-y-[-390px] shadow-lg outline outline-2 outline-white outline-offset-[10px] outline-dashed overflow-hidden">
+                <img src="public/foto-perfil.jpg" alt="teste">
+            </div>
+
+            <div class="screen450:text-4xl text-2xl text-zinc-600 font-medium hover:text-cyan-700 hover:underline cursor-pointer transition-all duration-100 screen450:mt-[240px] mt-[200px]"
+                id="website-link">
+                <div>www.exemplo-portifolio.com</div>
+            </div>
+            <div class="screen450:text-5xl text-4xl text-zinc-600 font-thin pt-10" id="physiotherapy-text">
+                <div>~ FISIOTERAPIA ~</div>
+            </div>
+        </div>
+
+        <div class=" w-full h-[120vh] max-850:h-full bg-zinc-200 translate-y-[-41vh]">
+
+            <div
+                class="flex items-center mt-[100px] gap-[50px] w-auto py-1 outline outline-2 outline-zinc-600/40 outline-offset-[10px] outline-dashed">
+                <div class="slider text-5xl text-zinc-600/40 font-semibold flex items-center gap-[50px]">
+                    <div class="w-auto min-w-max whitespace-nowrap">Marina mello</div>
+                    <div class="w-auto min-w-max whitespace-nowrap">Marina mello</div>
+                    <div class="w-auto min-w-max whitespace-nowrap">Marina mello</div>
+
+                </div>
+                <div class="slider text-5xl text-zinc-600/40 font-semibold flex items-center gap-[50px]">
+                    <div class="w-auto min-w-max whitespace-nowrap">Marina mello</div>
+                    <div class="w-auto min-w-max whitespace-nowrap">Marina mello</div>
+                    <div class="w-auto min-w-max whitespace-nowrap">Marina mello</div>
+
+                </div>
+                <div class="slider text-5xl text-zinc-600/40 font-semibold flex items-center gap-[50px]">
+                    <div class="w-auto min-w-max whitespace-nowrap">Marina mello</div>
+                    <div class="w-auto min-w-max whitespace-nowrap">Marina mello</div>
+                    <div class="w-auto min-w-max whitespace-nowrap">Marina mello</div>
+
+                </div>
+                <div class="slider text-5xl text-zinc-600/40 font-semibold flex items-center gap-[50px]">
+                    <div class="w-auto min-w-max whitespace-nowrap">Marina mello</div>
+                    <div class="w-auto min-w-max whitespace-nowrap">Marina mello</div>
+                    <div class="w-auto min-w-max whitespace-nowrap">Marina mello</div>
+
+                </div>
+                <div class="slider text-5xl text-zinc-600/40 font-semibold flex items-center gap-[50px]">
+                    <div class="w-auto min-w-max whitespace-nowrap">Marina mello</div>
+                    <div class="w-auto min-w-max whitespace-nowrap">Marina mello</div>
+                    <div class="w-auto min-w-max whitespace-nowrap">Marina mello</div>
+                </div>
+            </div>
+
+            <div
+                class="flex max-850:flex-col items-center justify-evenly mt-[200px] max-850:mt-[100px] screen850:gap-0 gap-[40px] max-850:mb-[120px]">
+                <div
+                    class="screen550:w-[70vw] screen850:w-[40vw] w-[90vw] h-[600px] shadow-lg p-4 bg-zinc-300/60 rounded-xl flex flex-col">
+                    <div class="text-5xl font-bold text-zinc-800 poppins-medium">Gênero</div>
+                    <div class="flex-1 flex max-1300:flex-col items-center justify-center gap-4">
+                        <!-- Informações sobre Mulheres -->
+                        <div class="text-center">
+                            <div id="female-percentage" class="text-3xl font-bold"></div>
+                            <div class="text-3xl flex items-center justify-center gap-2">
+                                <div>Mulheres</div>
+                                <div class="w-[14px] h-[14px] rounded-full bg-purple-500"></div>
+                            </div>
+                        </div>
+
+                        <!-- Gráfico de Progresso -->
+                        <div
+                            class="relative max-1300:w-[250px] w-[300px] screen1500:h-[300px] screen1400:h-[300px] max-1300:h-[250px] h-[200px] rounded-full bg-zinc-800 flex items-center justify-center">
+                            <div class="absolute inset-0 rounded-full bg-zinc-200"></div>
+                            <div id="progress-circle" class="absolute inset-0 rounded-full" style="background: conic-gradient(
+                                    #A855F7 0%,
+                                    #A855F7 var(--progress-angle),
+                                    #27272A var(--progress-angle),
+                                    #27272A 100%
+                                );"></div>
+                        </div>
+
+                        <!-- Informações sobre Homens -->
+                        <div class="text-center">
+                            <div id="male-percentage" class="text-3xl font-bold"></div>
+                            <div class="text-3xl flex items-center justify-center gap-2">
+                                <div class="w-[14px] h-[14px] rounded-full bg-zinc-800"></div>
+                                <div>Homens</div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <div class="flex flex-col justify-center items-center gap-[40px]">
+                    <div
+                        class="screen850:w-[40vw] screen550:w-[70vw] w-[90vw] shadow-lg p-4 h-[270px] bg-zinc-300/60 rounded-xl">
+                        <div class="w-full h-full flex flex-col items-center">
+                            <div class="flex items-center justify-between w-full">
+                                <div class="text-3xl font-bold text-zinc-800 poppins-medium">Insights</div>
+                                <div class="screen900:text-2xl text-lg font-semibold text-zinc-600" id="date-range">
+                                    2 de abr a 1 de mai
+                                </div>
+                            </div>
+                            <div class="w-full mt-10 px-3">
+                                <div class="flex items-center justify-between w-full">
+                                    <div class="screen900:text-lg screen375:text-base text-sm font-medium">Contas
+                                        alcançadas</div>
+                                    <div class=" flex gap-4 items-center">
+                                        <div class="screen900:text-xl text-lg font-medium text-zinc-700"
+                                            id="contas-alcancadas">
+                                            2,3mi
+                                        </div>
+                                        <i class="ph-bold ph-caret-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-full mt-10 px-3">
+                                <div class="flex items-center justify-between w-full">
+                                    <div class="screen900:text-lg screen375:text-base text-sm font-medium">Contas com
+                                        engajamento</div>
+                                    <div class=" flex gap-4 items-center">
+                                        <div class="screen900:text-xl text-lg font-medium text-zinc-700"
+                                            id="contas-engajamento">
+                                            278 mil
+                                        </div>
+                                        <i class="ph-bold ph-caret-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-full mt-10 px-3">
+                                <div class="flex items-center justify-between w-full">
+                                    <div class="screen900:text-lg screen375:text-base text-sm font-medium">Total de
+                                        seguidores</div>
+                                    <div class=" flex gap-4 items-center">
+                                        <div class="screen900:text-xl text-lg font-medium text-zinc-700"
+                                            id="total-seguidores">
+                                            42 mil
+                                        </div>
+                                        <i class="ph-bold ph-caret-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="screen850:w-[40vw] screen550:w-[70vw] w-[90vw] shadow-lg p-4 h-[270px] bg-zinc-300/60 rounded-xl">
+                        <div class="w-full h-full flex flex-col ">
+
+                            <div class="screen900:text-3xl text-2xl font-bold text-zinc-800 poppins-medium">Principais
+                                faixas etárias
+                            </div>
+
+                            <div class="flex flex-col justify-evenly h-full" id="dataContainer">
+                                <!-- Os dados serão preenchidos aqui pelo JavaScript -->
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="w-full screen850:h-[100vh] h-full bg-zinc-800 translate-y-[-41vh] relative ">
+            <div class="custom-shape-divider-bottom-1727618344 translate-y-[-130px] rotate-180">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                    preserveAspectRatio="none">
+                    <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+                </svg>
+            </div>
+
+            <div class="w-full h-[100px] bg-zinc-800 mt-[100px] max-650:mb-[80px]">
+
+                <a href="#">
+                    <div
+                        class="w-full bg-zinc-800 screen1000:py-4 py-2 text-zinc-600 z-10 screen1200:text-3xl screen1000:text-2xl screen800:text-xl screen350:text-base text-sm flex max-650:flex-col items-center justify-center  gap-3 outline outline-2 outline-zinc-600 outline-offset-[10px] outline-dashed overflow-hidden cursor-pointer ">
+                        <div>Quer conhecer um pouco mais do meu trabalho?</div>
+                        <div class=" max-1000:hidden"><i class="ph ph-instagram-logo instagram-icon3"></i></div>
+                        <div class="screen1000:hidden max-700:hidden"><i
+                                class="ph ph-instagram-logo instagram-icon4"></i></div>
+                        <div class="screen700:hidden"><i class="ph ph-instagram-logo instagram-icon5"></i></div>
+                        <div>entre no meu instagram para mais</div>
+                    </div>
+                </a>
+            </div>
+            <div class="w-full h-full flex max-850:flex-col items-center justify-evenly screen850:mt-[0px] mt-[50px]">
+                <div
+                    class="screen1100:w-[30%] screen850:w-[45%] w-[70%] screen850:h-[740px] h-[500px] overflow-hidden rounded-lg bg-white/40 shadow-lg outline outline-2 outline-zinc-600 outline-offset-[5px] outline-dashed">
+                    <img src="/public/foto-grande-perfil.jpg" alt="" class="w-full h-full object-cover">
+                </div>
+                <div
+                    class="screen850:w-[50%] w-[70%] screen850:pt-0 pt-[40px] h-[740px] flex flex-col items-center gap-4">
+                    <div
+                        class="screen850:w-[60%] screen450:w-[100%] w-[120%]  py-3 rounded-lg bg-zinc-300/40 text-2xl text-center font-bold text-zinc-200">
+                        ~Um
+                        pouco sobre
+                        mim~</div>
+                    <div class="screen850:w-[80%] screen550:w-[120%] w-[135%] text-lg text-zinc-200 text-center pt-2 overflow-y-auto"
+                        id="bio-text">
+                        <div>
+                            👋 Olá! Sou [Seu Nome], fisioterapeuta apaixonada pela saúde e bem-estar. Meu objetivo é
+                            ajudar você a se movimentar melhor, aliviar dores e alcançar uma vida mais equilibrada
+                            através de dicas práticas de fisioterapia, alongamentos, exercícios e posturas corretas para
+                            o dia a dia.
+                            <br><br>
+                            🎓 Graduada em Fisioterapia, me especializei em reabilitação esportiva e postural. Acredito
+                            que o movimento é a chave para uma vida saudável, e aqui no meu perfil compartilho um
+                            conteúdo voltado para quem quer prevenir lesões, melhorar a performance física e cuidar da
+                            saúde de forma integrada.
+                            <br><br>
+                            ✨ Se você busca uma vida com mais qualidade e menos dor, está no lugar certo! Aqui você vai
+                            encontrar:
+                            <br><br>
+                            Dicas de exercícios para fortalecer e alongar
+                            Orientações para melhorar a postura no trabalho e em casa
+                            Maneiras de prevenir e tratar lesões
+                            Informações sobre tratamentos de fisioterapia
+                            🌿 Vamos juntos construir uma rotina mais saudável e cheia de movimento? Me acompanhe e
+                            descubra como pequenos hábitos podem transformar sua saúde física!
+                            <br><br>
+                            💡 Fique de olho nos stories para acompanhar meu dia a dia, dicas exclusivas e muito mais!
+                            Não esqueça de se movimentar todos os dias – seu corpo vai te agradecer. 🙌
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="w-full h-[100vh] bg-zinc-200 translate-y-[-41vh]">
+            <div class="translate-y-[-1px]">
+                <div class="custom-shape-divider-bottom-1727618344 rotate-[deg]">
+                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                        preserveAspectRatio="none">
+                        <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+                    </svg>
+                </div>
+            </div>
+            <a href="#inicio">
+                <div
+                    class="size-[50px] rounded-full border border-zinc-600 absolute top-[20px] right-[20px] flex items-center justify-center cursor-pointer">
+                    <i class="ph-fill ph-arrow-fat-line-up arrow-top-icon"></i>
+                </div>
+            </a>
+
+            <div class="w-full h-full flex flex-col items-center justify-center gap-10">
+                <a href="#">
+                    <div
+                        class="w-auto px-2 h-[100px] border border-zinc-600 rounded-lg flex items-center gap-2 cursor-pointer">
+                        <i class="ph ph-instagram-logo instagram-icon2"></i>
+                        <div class="screen500:text-6xl screen425:text-5xl text-4xl text-zinc-600 font-semibold">
+                            TORRES.MILLIE</div>
+                    </div>
+                </a>
+                <div class="text-6xl text-zinc-600 font-thin">Obrigado!</div>
+            </div>
+        </div>
+    </div>
+
     <script src="new-script.js"></script>
 </body>
 
